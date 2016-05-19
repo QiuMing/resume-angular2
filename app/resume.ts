@@ -4,9 +4,7 @@ export class Resume {
     email: string;
     qq: string;
     weixin: string;
-
 	applyJob: string;
-
     userBaseInfo: string;  
     educationInfo: string;
     githubUrl: string;

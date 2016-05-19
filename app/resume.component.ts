@@ -17,9 +17,9 @@ export class ResumeComponent  {
 var DATA: Resume = {
     "name": "xqMing",           
     "email": "liaoming.lxm@gmail.com",
-    "qq": "631663525@qq.com",
+    "qq": "631663525",
     "weixin": "",
-    "nickName": "xqMing",
+    "nickName": "小丘明",
     "applyJob": "web 前端工程师",
     "userBaseInfo": "1993年9月23日/男/处女座",  
     "educationInfo": "本科/广东财经大学信息学院/2016年应届生",
