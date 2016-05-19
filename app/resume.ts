@@ -1,30 +1,35 @@
-export class resume {
+export class Resume {
     name: string;			
-
+	nickName: string;
     email: string;
     qq: string;
     weixin: string;
 
 	applyJob: string;
 
-    userBaseInfo: string;    //  1993年9月23日 / 处女座  / 处女座
-    gitHubUrl: string;
+    userBaseInfo: string;  
+    educationInfo: string;
+    githubUrl: string;
+    blogUrl: string;
     levelOfEnglish: string;
 	selfIntroduction: string;
 	signature: string;
+	skills: skill[];
 }
 
-export class skill{
+export class skill {
 	type: string;
 	name: string;
 	description: string;
 }
-export class tech{
+
+
+export class tech {
 	name: string;
-	witth: string;
+	width: number;
 }
 
-export class PersonalProject{
+export class PersonalProject {
 	projectName: string;
 	time: string;
 	description: string;
