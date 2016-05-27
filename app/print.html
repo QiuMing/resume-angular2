@@ -1,24 +1,5 @@
-<aside>
-    <ul>
-        <li>
-            <a href="https://github.com/DIYgod/Resume" target="_blank">源代码</a>
-        </li>
-        <li>
-            <a href="前端工程师-{{data.name}}.pdf" target="_blank">PDF 下载</a>
-        </li>
-        <li>
-            <a [routerLink]="['Dashboard']">打印版预览</a>
-        </li>
-        <li>
-            <a href="https://www.anotherhome.net" target="_blank">Blog</a>
-        </li>
-        <li>
-            <a href="https://www.github.com/DIYgod" target="_blank">GitHub</a>
-        </li>
-    </ul>
-</aside>
 <div class="container">
-    <div class="sidebar">
+    <!-- <div class="sidebar">
         <div class="title">
             <img style="width:150px; height:150px; border-radius:50%; overflow:hidden;" src="https://avatars2.githubusercontent.com/u/11348698?v=3&s=460">
             <h1>{{data.name}}的简历</h1>
@@ -47,9 +28,10 @@
             </li>
         </ul>
         <div class="note">
+            
             <p *ngFor = "let item of mainDes"> {{item}}</p>
         </div>
-    </div>
+    </div> -->
     <div class="main">
         <ul class="main-info">
             <li class="someRight">
@@ -79,6 +61,11 @@
                 <ul class="exp">
                     <li>
                         <div class="circle"></div>
+                        <!-- <h4>
+                            APlayer（2015.11）
+                            <a href="https://github.com/DIYgod/APlayer" target="_blank"><i class="icon-link"></i>源代码</a>
+                            <a href="https://www.anotherhome.net/file/APlayer/" target="_blank"><i class="icon-link"></i>Demo</a>
+                        </h4> -->
                         <h4>
                             知乎爬虫
                             <a href="https://github.com/DIYgod/APlayer" target="_blank"><i class="icon-link"></i>源代码</a>
@@ -109,11 +96,103 @@
                     <li>
                         <div class="circle"></div>
                         <h4>
-                            jee-boot-site
+                            百度IFE前端技术学院课程（2015.4 - 2015.6）
+                            <a href="https://github.com/DIYgod/ife-work" target="_blank"><i class="icon-link"></i>源代码</a>
                         </h4>
-                       近期个人发起的一个jee开源项目，和网友在维护，计划boot话jeesite 项目，使用spring-boot、thymeleaf、bower 等技术。
-
+                        <p>学习百度IFE前端技术学院春季班课程，并独立完成其中的任务</p>
+                        <ul class="efe">
+                            <li>
+                                <h5>
+                                    Task 0001
+                                    <a href="https://github.com/DIYgod/ife-work/tree/master/task0001" target="_blank"><i class="icon-link"></i>源代码</a>
+                                    <a href="https://www.anotherhome.net/file/ife/task0001/" target="_blank"><i class="icon-link"></i>Demo</a>
+                                </h5>
+                                <p>实现了一个个人博客网站的首页、文章、作品、关于等静态页面，合理运用HTML语义化标签，并实现了多栏布局、瀑布流布局、时间轴等布局样式。</p>
+                                <img src="img/task0001.png">
+                            </li>
+                            <li>
+                                <h5>
+                                    Task 0002
+                                    <a href="https://github.com/DIYgod/ife-work/tree/master/task0002" target="_blank"><i class="icon-link"></i>源代码</a>
+                                    <a href="https://www.anotherhome.net/file/ife/task0002/task0002_1.html" target="_blank"><i class="icon-link"></i>Demo</a>
+                                </h5>
+                                <p>实现了一个微型JS库，其中包括对原生 JavaScript 数据类型及语言基础、DOM、事件、BOM、Ajax等的操作和封装，并运用这个JS库实现了表单输入交互、倒计时工具、轮播图、输入提示框、界面拖拽交互</p>
+                                <img src="img/task0002.png">
+                            </li>
+                            <li>
+                                <h5>Task 0003 0004
+                                    <a href="https://github.com/DIYgod/ife-work/tree/master/task0004" target="_blank"><i class="icon-link"></i>源代码</a>
+                                    <a href="https://www.anotherhome.net/file/ife/task0004/" target="_blank"><i class="icon-link"></i>Demo</a>
+                                </h5>
+                                <p>实现了一个 GTD Tools (个人任务管理系统)，支持任务两级分类、增删查改、标记、根据日期分类等功能，并实现了一个独立的移动版本</p>
+                                <p>使用 localStorage 来保存用户的任务数据，处理了可能出现的 XSS 安全隐患，使用 原生JavaScript Less预处理器 来实现前端组件及数据交互，使用 Yeoman Grunt 改进工作流</p>
+                                <img src="img/task0003.png">
+                                <img src="img/task0004.png" height="97px">
+                            </li>
+                        </ul>
                     </li>
+                    <!-- <li>
+                        <div class="circle"></div>
+                        <h4>
+                            HTML.LOVE 个人简历（2015.8 - 至今）
+                            <a href="https://github.com/DIYgod/Resume" target="_blank"><i class="icon-link"></i>源代码</a>
+                            <a href="http://html.love/" target="_blank"><i class="icon-link"></i>Demo</a>
+                        </h4>
+                        <p>设计优雅、内容完善的静态简历页面，可以用浏览器直接生成合适尺寸的PDF，使用 Gulp 改进工作流，GitHub 上 Star 133 Fork 33</p>
+                        <img src="img/resume.png">
+                    </li>
+                    <li>
+                        <div class="circle"></div>
+                        <h4>
+                            jCarrousel（2015.8）
+                            <a href="https://github.com/DIYgod/jCarrousel" target="_blank"><i class="icon-link"></i>源代码</a>
+                            <a href="https://www.anotherhome.net/file/jCarrousel/" target="_blank"><i class="icon-link"></i>Demo</a>
+                        </h4>
+                        <p>一个3D轮播图 jQuery  插件，实现了3D轮播效果，可以自适应宽度、自适应图片数量，有方便的切换按钮，另外实现了播放、停止、切换到任意一张图片的API</p>
+                        <img src="img/jCarrousel.jpg">
+                    </li> -->
+                    <!-- <li>
+                        <div class="circle"></div>
+                        <h4>
+                            Do-you-like-me（2015.9）
+                            <a href="https://github.com/DIYgod/Do-you-like-me" target="_blank"><i class="icon-link"></i>源代码</a>
+                            <a href="https://www.anotherhome.net/file/like/" target="_blank"><i class="icon-link"></i>Demo</a>
+                        </h4>
+                        <p>一个简单有趣的 UI 点赞组件，后端使用 NodeJS + MongoDB 实现，用 mongoose 操作 MongoDB，实现了对 MongoDB 数据库简单的增删查改</p>
+                        <img src="img/Do-you-like-me.png">
+                    </li> -->
+                    <!-- <li>
+                        <div class="circle"></div>
+                        <h4>
+                            EasyGoAgent
+                            <a href="https://github.com/DIYgod/EasyGoAgent" target="_blank"><i class="icon-link"></i>源代码</a>
+                        </h4>
+                        <p>开箱即用 & 在线更新的GoAgent，GitHub 上 Star 209 Fork 70</p>
+                    </li>
+                    <li>
+                        <div class="circle"></div>
+                        <h4>
+                            Show Me the Code Python version
+                            <a href="https://github.com/DIYgod/python/tree/master/DIYgod" target="_blank"><i class="icon-link"></i>源代码</a>
+                        </h4>
+                        <p>一系列Python小程序，包括 图像处理 数据库 文件操作 正则式 等内容</p>
+                    </li>
+                    <li>
+                        <div class="circle"></div>
+                        <h4>
+                            Simple-C Compiler
+                            <a href="https://github.com/DIYgod/Compiler" target="_blank"><i class="icon-link"></i>源代码</a>
+                        </h4>
+                        <p>一个用C编写的简单类C语言编译器，目前完成了 词法分析 语法分析 阶段，使用了 Lex Yacc 两个工具</p>
+                    </li> -->
+                    <!-- <li>
+                        <div class="circle"></div>
+                        <h4>
+                            WHUTNews
+                            <a href="https://github.com/DIYgod/WHUTNews" target="_blank"><i class="icon-link"></i>源代码</a>
+                        </h4>
+                        <p>Python 编写的爬取教务处公告，判断是否有新通知，并把新通知发邮件提醒的简单 Python 爬虫程序</p>
+                    </li> -->
                 </ul>
             </li>
             <li>
@@ -153,10 +232,8 @@
                     <li>
                         <div class="circle"></div>
                         <h4>其他</h4>
-                        <p> 了解 Yeoman Bower Grunt Gulp 前端自动化工具</p>
-                        <p> 了解前端安全、性能优化方面的一些知识</p>
-                        <p> 熟悉 Git </p>
-                        <p> 能够熟练使用 Markdown 进行写作</p>
+                        <p>熟悉 Yeoman Bower Grunt Gulp 前端自动化工具</p>
+                        <p>了解前端安全、性能优化方面的一些知识</p>
                     </li>
                 </ul>
                 

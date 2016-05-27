@@ -1,30 +1,19 @@
 import {Component} from '@angular/core';
-import {Routes, ROUTER_DIRECTIVES, ROUTER_PROVIDERS}  from '@angular/router';
-
-import {PrintComponent} from './print.component';
 import { Resume } from './resume';
 
 @Component({
     selector: 'my-app',
-    templateUrl: 'app/resume.html',
-    styleUrls: ['app/style.min.css', 'app/fontello.min.css'] ,
-    directives: [ROUTER_DIRECTIVES],
-    providers: [
-        ROUTER_PROVIDERS 
-    ]
+    templateUrl: 'app/print.html',
+    styleUrls: ['app/print.min.css', 'app/fontello.min.css']
+   
 })
-@Routes([
-{
-    path: '/dashboard',
-    component: PrintComponent,  
-}
-])
-export class ResumeComponent  {
+export class PrintComponent {
     data = DATA;
     techs = TECHS;
     otherDes = OTHERDES;
     mainDes = MAINDES;
 }
+
 
 var DATA: Resume = {
     "name": "xqMing",           
@@ -32,7 +21,7 @@ var DATA: Resume = {
     "qq": "631663525",
     "weixin": "",
     "nickName": "小丘明",
-    "applyJob": "java 后台开发攻城师",
+    "applyJob": "web 前端工程师",
     "userBaseInfo": "1993年9月23日/男/处女座",  
     "educationInfo": "本科/广东财经大学信息学院/2016年应届生",
     "githubUrl": "https://github.com/QiuMing",
@@ -73,7 +62,8 @@ var MAINDES: string[]=[
 ]
 
 var OTHERDES: string[] = [
-    "踏实、稳重型攻城狮，爱小丘，爱coding，爱生活",
-    "梦想着成为一个架构师，目前在努力加深拓宽自己的技术栈",
+    "梦想着成为一个架构师，目前在努力拓宽自己的技术栈，却又苦于技术不能够深入",
     "热爱运动，喜欢羽毛球",
+    "掌握 Vim Git 等开发工具的使用",
+    "能够熟练使用 Markdown 进行写作",
 ]
