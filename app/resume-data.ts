@@ -181,7 +181,7 @@ export var ASIDE: Aside[] = [
 		"url": "string"
 	}, {
 		"name": "github",
-		"url": "https://www.github.com/DIYgod"
+		"url": "https://github.com/QiuMing"
 	}
 ]
 
