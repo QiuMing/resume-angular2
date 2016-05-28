@@ -39,7 +39,7 @@ export var SKILLS: Skill[] = [
             }, {
                 "name": "环境",
                 "descriptions": [
-                    "熟悉Linux 开发环境、 Linux 服务器环境搭建部署，两年 Linux 日常使用经验",
+                    "熟悉Linux 开发环境、 Linux 服务器环境搭建部署,使用该阿里云",
                     "了解 Apache Nginx web服务器，一年多建站经验"
                 ]
             }
@@ -50,22 +50,22 @@ export var SKILLS: Skill[] = [
             {
                 "name": "HTML / CSS",
                 "descriptions": [
-                    "能够编写语义化的 HTML，模块化的 CSS，完成较复杂的布局",
+                    "能够编写语义化的 HTML，模块化的 CSS，完成较简单的布局",
+                    "熟悉bootstrap,能够使用它编写简单的应用",
                     "了解 Less / Sass  等CSS预处理和后处理方法、工具"
                 ]
             }, {
                 "name": "JavaScript",
                 "descriptions": [
-                    "熟悉原生Javascript，能脱离jQuery等类库编码",
-                    "能运用模块化、面向对象的方式编程",
-                    "了解 RequireJS jQuery AngularJS 的使用"
+                    "了解jquery、AngularJS2.0,并能够使用它们编写简单的应用",
+                    "能运用模块化、面向对象的方式编程"
                 ]
             }, {
                 "name": "其它",
                 "descriptions": [
-                    "了解 Yeoman Bower Grunt Gulp 前端自动化工具",
-                    "了解前端安全、性能优化方面的一些知识 ",
-                    "熟悉 Git ",
+                    "了解 Yeoman 、Bower、 Grunt 、Gulp、webpack 前端自动化工具",
+                    "了解前端安全、性能优化方面的一些知识",
+                    "熟悉 Git,会搭建git仓库,用git 进行团队合作或远程协作",
                     "能够熟练使用 Markdown 进行写作"
                 ]
             }
@@ -78,7 +78,7 @@ export var TECHS: Tech[] = [
         "name": "Java",
         "width": 80
     }, {
-        "name": "C",
+        "name": "php",
         "width": 60
     }, {
         "name": "python",
