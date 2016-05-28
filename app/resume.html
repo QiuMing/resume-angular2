@@ -1,39 +1,25 @@
 <aside>
     <ul>
-        <li>
-            <a href="https://github.com/DIYgod/Resume" target="_blank">源代码</a>
-        </li>
-        <li>
-            <a href="前端工程师-{{data.name}}.pdf" target="_blank">PDF 下载</a>
-        </li>
-        <li>
-            <a [routerLink]="['Dashboard']">打印版预览</a>
-        </li>
-        <li>
-            <a href="https://www.anotherhome.net" target="_blank">Blog</a>
-        </li>
-        <li>
-            <a href="https://www.github.com/DIYgod" target="_blank">GitHub</a>
-        </li>
+        <li *ngFor="let item of aside"><a href="{{item.url}}" target="_blank">{{item.name}}</a> </li>
     </ul>
 </aside>
 <div class="container">
     <div class="sidebar">
         <div class="title">
             <img style="width:150px; height:150px; border-radius:50%; overflow:hidden;" src="https://avatars2.githubusercontent.com/u/11348698?v=3&s=460">
-            <h1>{{data.name}}的简历</h1>
-            <h2>{{data.signature}}</h2>
+            <h1>{{profile.name}}的简历</h1>
+            <h2>{{profile.signature}}</h2>
         </div>
         <ul class="side-info">
             <li class="someRight">
                 <dt><i class="icon-bookmark"></i>Contact. 联系方式</dt>
-                <dd><i class="icon-mail-alt"></i>邮箱: <a href="mailto:i@html.love" target="_blank">{{data.email}}</a></dd>
+                <dd><i class="icon-mail-alt"></i>邮箱: <a href="mailto:i@html.love" target="_blank">{{profile.email}}</a></dd>
                 <dd><i class="icon-wechat"></i>微信: DIYgod</dd>
-                <dd><i class="icon-qq"></i>QQ: <a href="http://wpa.qq.com/msgrd?v=3&uin={{data.qq}}&site=qq&menu=yes" target="_blank">{{data.qq}}</a></dd>
+                <dd><i class="icon-qq"></i>QQ: <a href="http://wpa.qq.com/msgrd?v=3&uin={{profile.qq}}&site=qq&menu=yes" target="_blank">{{profile.qq}}</a></dd>
             </li>
             <li class="someRight">
                 <dt><i class="icon-bookmark"></i>Application. 应聘岗位</dt>
-                <dd>{{data.applyJob}}</dd>
+                <dd>{{profile.applyJob}}</dd>
             </li>
             <li class="skill">
                 <dt><i class="icon-bookmark"></i>Tech. 技能点</dt>
@@ -54,112 +40,56 @@
         <ul class="main-info">
             <li class="someRight">
                 <dt><i class="icon-bookmark"></i>Basic info. 基本信息</dt>
-                <dd><span>个人信息:</span> {{data.userBaseInfo}}</dd>
-                <dd><span>教育经历:</span> {{data.educationInfo}}</dd>
-                <dd><span>英语水平:</span> {{data.levelOfEnglish}}</dd>
-                <dd *ngIf="data.nickName!=''"><span>常用ID:</span> {{data.nickName}}</dd>
-                <dd *ngIf="data.blogUrl!=''"><span>Blog:</span> <a href="{{data.blogUrl}}" target="_blank">{{data.blogUrl}}</a></dd>
-                <dd *ngIf="data.githubUrl!=''"><span>GitHub:</span> <a href="{{data.githubUrl}}" target="_blank">{{data.githubUrl}}</a></dd>
+                <dd><span>个人信息:</span> {{profile.userBaseInfo}}</dd>
+                <dd><span>教育经历:</span> {{profile.educationInfo}}</dd>
+                <dd><span>英语水平:</span> {{profile.levelOfEnglish}}</dd>
+                <dd *ngIf="profile.nickName!=''"><span>常用ID:</span> {{profile.nickName}}</dd>
+                <dd *ngIf="profile.blogUrl!=''"><span>Blog:</span> <a href="{{profile.blogUrl}}" target="_blank">{{profile.blogUrl}}</a></dd>
+                <dd *ngIf="profile.githubUrl!=''"><span>GitHub:</span> <a href="{{profile.githubUrl}}" target="_blank">{{profile.githubUrl}}</a></dd>
             </li>
             <li>
                 <dt><i class="icon-bookmark"></i>Experience. 项目与工作经验</dt>
-                <h3>cooka 网络科技有限公司(2015.1 - 2016.5.19)</h3>
-                <ul class="exp">
-                    <li>
-                        <div class="circle"></div>
-                        <h4>cooka商场系统</h4>
-                        <p>这是我和小伙伴从零开始的项目，去年完成了cooka 跨境电商项目(B2B项目)，之后，在此商城的基础上，开发了移动web app ，微信商场应用</p>
-                        <p>我全程负责了系统用户模块、购物车模块、风控模块、运费模块、权限模块、统计模块、安全中心模块的后台设计与开发。主要用到spring boot、mybatis、shiro、velocity等技术。</p>
-                        <p>对于系统用到的其它技术，如搜索用到的spring-data-solr，分布式文件系统FastDFS，也有所了解</p>
-                        <img src="img/cooka1.png">
-                        <img src="img/cooka3.png">
-                    </li>
-                </ul>
+                  <div *ngFor="let comPro of companyProjects"> 
+                    <h3>{{comPro.companyName}}</h3>
+                    <ul class="exp">
+                        <li *ngFor="let pro of comPro.project">
+                            <div class="circle"></div>
+                            <h4>
+                                {{pro.name}}
+                                 <a  *ngIf="pro.codeUrl!=''" href="{{pro.codeUrl}}" target="_blank"><i class="icon-link"></i>源代码</a>
+                                <a *ngIf="pro.demoUrl!=''"  href="{{pro.demoUrl}}" target="_blank"><i class="icon-link"></i>Demo</a>
+                            </h4>
+                            <p *ngFor="let item of pro.descriptions">   {{item}}  </p>
+                            <img  *ngFor="let img of pro.images" src="{{img}}">
+                        </li>
+                    </ul>
+                </div>  
                 <h3>个人项目</h3>
                 <ul class="exp">
-                    <li>
+                    <li *ngFor="let pro of personalProjects"> 
                         <div class="circle"></div>
                         <h4>
-                            知乎爬虫
-                            <a href="https://github.com/DIYgod/APlayer" target="_blank"><i class="icon-link"></i>源代码</a>
-                            <a href="https://www.anotherhome.net/file/APlayer/" target="_blank"><i class="icon-link"></i>Demo</a>
+                            {{pro.name}}
+                             <a  *ngIf="pro.codeUrl!=''" href="{{pro.codeUrl}}" target="_blank"><i class="icon-link"></i>源代码</a>
+                            <a *ngIf="pro.demoUrl!=''"  href="{{pro.demoUrl}}" target="_blank"><i class="icon-link"></i>Demo</a>
                         </h4>
-                        <p>空闲时为学习爬虫时所编写，使用到webmagic、spring-boot、百度echart、redis 等技术，做的数据抓取并且 用图表可视化显示</p>
-                        <img src="img/zhihu2.png">
-                    </li>
-                    <li>
-                        <div class="circle"></div>
-                         <h4>
-                            晨曦androi app 应用
-                            <a href="https://github.com/DIYgod/Amativeness" target="_blank"><i class="icon-link"></i>源代码</a>
-                            <a href="https://www.anotherhome.net" target="_blank"><i class="icon-link"></i>Demo</a>
-                        </h4>
-                        <p>一款以关注私人健康为目标的app，一个学校团队的合作项目，团队唯一编码人，涵盖登陆注册、带三方登陆、新 闻资讯、计步器等功能模块，使用jwt进行身份认证与数据传输。 </p>
-                        <img src="img/chenxi.png">
-                        
-                    </li>
-                    <li>
-                        <div class="circle"></div>
-                        <h4>
-                            java 远程监控软件
-                        </h4>
-                        <p>这是一个有趣的java GUI 软件，是大学期间模拟实验室屏幕监控软件所做。分为客户端和服务端，服务端可以监控多个客户端，并实现了远程控制、文件发送、举手提问等功能</p>
-                            <img src="img/pmjk.png">
-                    </li>
-                    <li>
-                        <div class="circle"></div>
-                        <h4>
-                            jee-boot-site
-                        </h4>
-                       近期个人发起的一个jee开源项目，和网友在维护，计划boot话jeesite 项目，使用spring-boot、thymeleaf、bower 等技术。
-
+                        <p *ngFor="let item of pro.descriptions"> {{item}}</p>
+                        <img  *ngFor="let img of pro.images" src="{{img}}">
                     </li>
                 </ul>
             </li>
             <li>
                 <dt><i class="icon-bookmark"></i>Skill. 技能清单</dt>
-                <h3>后端</h3>
-                <ul class="exp">
-                    <li>
-                        <div class="circle"></div>
-                        <h4>语言</h4>
-                        <p>熟悉Java及现今其流行技术栈：spring-boot、spring mvc 、mybatis、shiro、spring data jpa。使用过dubbo、active mq、zookeeper</p>
-                        <p>熟悉android 技术栈，能够完成简单app应用机器后台搭建。</p>
-                        <p>了解php，曾用php对国外开源电商系统cscart进行二次开发。</p>
-                        <p>了解 Python，使用过scrapy爬虫框架编写爬虫。</p>
-                    </li>
-                    <li>
-                        <div class="circle"></div>
-                        <h4>环境</h4>
-                        <p>熟悉 Linux 开发环境、 Linux 服务器环境搭建部署，两年 Linux 日常使用经验</p>
-                        <p>了解 Apache Nginx web服务器，一年多建站经验</p>
-                    </li>
-                </ul>
-                <h3>Web前端</h3>
-                <ul class="exp">
-                    <li>
-                        <div class="circle"></div>
-                        <h4>HTML / CSS </h4>
-                        <p>能够编写语义化的 HTML，模块化的 CSS，完成较复杂的布局</p>
-                        <p>了解 Less / Sass  等CSS预处理和后处理方法、工具</p>
-                    </li>
-                    <li>
-                        <div class="circle"></div>
-                        <h4>JavaScript</h4>
-                        <p>熟悉原生Javascript，能脱离jQuery等类库编码</p>
-                        <p>能运用模块化、面向对象的方式编程</p>
-                        <p>了解 RequireJS jQuery AngularJS 的使用</p>
-                    </li>
-                    <li>
-                        <div class="circle"></div>
-                        <h4>其他</h4>
-                        <p> 了解 Yeoman Bower Grunt Gulp 前端自动化工具</p>
-                        <p> 了解前端安全、性能优化方面的一些知识</p>
-                        <p> 熟悉 Git </p>
-                        <p> 能够熟练使用 Markdown 进行写作</p>
-                    </li>
-                </ul>
-                
+                <div *ngFor = "let skill of skills" >
+                    <h3> {{skill.type}} </h3>
+                    <ul class="exp">
+                        <li *ngFor= "let skillItem of skill.skillItems" >
+                            <div class="circle"> </div>
+                            <h4> {{skillItem.name}} </h4>
+                            <p *ngFor = "let item of skillItem.descriptions" > {{item}} </p>
+                        </li>
+                    </ul>
+                </div>
                 <h3>其他</h3>
                 <ul class="exp">
                     <li>
@@ -171,5 +101,5 @@
     </div>
 </div>
 <footer>
-    <p>Theme by <a href="https://github.com/DIYgod/Resume" target="_blank">DIYgod</a>. Made with <i class="icon-heart throb" style="color: #d43f57;"></i> by {{data.nickName}}. 最后更新于2016年3月1日</p>
+    <p>Theme by <a href="https://github.com/DIYgod/Resume" target="_blank">DIYgod</a>. Made with <i class="icon-heart throb" style="color: #d43f57;"></i> by {{profile.nickName}}. 最后更新于2016年3月1日</p>
 </footer>

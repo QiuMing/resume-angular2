@@ -1,4 +1,4 @@
-export class Resume {
+export class Profile {
     name: string;			
 	nickName: string;
     email: string;
@@ -12,26 +12,55 @@ export class Resume {
     levelOfEnglish: string;
 	selfIntroduction: string;
 	signature: string;
-	skills: skill[];
 }
 
-export class skill {
+export class Skill {
 	type: string;
+	skillItems: SkillItem[];
+}
+
+export class SkillItem {
 	name: string;
-	description: string;
+	descriptions: string[];
 }
 
 
-export class tech {
+export class Tech {
 	name: string;
 	width: number;
 }
 
+
 export class PersonalProject {
-	projectName: string;
+	name: string;
 	time: string;
-	description: string;
-	image: string;   //应该是一个数组
+	descriptions: string[];
+	images: string[];    
 	codeUrl: string;
 	demoUrl: string;
+}
+
+export class CompanyProject {
+	companyName: string;
+	time: string;
+	project: Project[];
+}
+
+export class Experience {
+	name: string;
+	time: string;
+	project: Project[];
+}
+
+export class Project {
+	name: string;
+	descriptions: string[];
+	images: string[];
+	codeUrl: string;
+	demoUrl: string;
+}
+
+export class Aside{
+	name: string;
+	url: string;
 }
