@@ -4,6 +4,7 @@ export class Profile {
     email: string;
     qq: string;
     weixin: string;
+    phone: string;
 	applyJob: string;
     userBaseInfo: string;  
     educationInfo: string;
