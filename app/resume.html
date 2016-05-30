@@ -13,9 +13,10 @@
         <ul class="side-info">
             <li class="someRight">
                 <dt><i class="icon-bookmark"></i>Contact. 联系方式</dt>
-                <dd><i class="icon-mail-alt"></i>邮箱: <a href="mailto:i@html.love" target="_blank">{{profile.email}}</a></dd>
-                <dd><i class="icon-wechat"></i>微信: DIYgod</dd>
-                <dd><i class="icon-qq"></i>QQ: <a href="http://wpa.qq.com/msgrd?v=3&uin={{profile.qq}}&site=qq&menu=yes" target="_blank">{{profile.qq}}</a></dd>
+                <dd *ngIf="profile.email!=''"><i class="icon-mail-alt"></i>邮箱: <a href="mailto:i@html.love" target="_blank">{{profile.email}}</a></dd>
+                <dd *ngIf="profile.weixin!=''"><i class="icon-wechat"></i>微信: {{profile.weixin}}</dd>
+                <dd  *ngIf="profile.phone!=''"><i class="icon-phone-1"></i>手机: {{profile.phone}}</dd>
+                <dd *ngIf="profile.qq!=''"><i class="icon-qq"></i>QQ: <a href="http://wpa.qq.com/msgrd?v=3&uin={{profile.qq}}&site=qq&menu=yes" target="_blank">{{profile.qq}}</a></dd>
             </li>
             <li class="someRight">
                 <dt><i class="icon-bookmark"></i>Application. 应聘岗位</dt>
@@ -35,6 +36,12 @@
         <div class="note">
             <p *ngFor = "let item of mainDes"> {{item}}</p>
         </div>
+        <div class="qr">
+            <div class="qr-in">
+                <img src="img/psb.jpg">
+                <p>扫描加微信哦(^_^)</p>
+            </div>
+        </div> 
     </div>
     <div class="main">
         <ul class="main-info">
@@ -101,5 +108,5 @@
     </div>
 </div>
 <footer>
-    <p>Theme by <a href="https://github.com/DIYgod/Resume" target="_blank">DIYgod</a>. Made with <i class="icon-heart throb" style="color: #d43f57;"></i> by {{profile.nickName}}. 最后更新于2016年3月1日</p>
+    <p>Theme by <a href="https://github.com/DIYgod/Resume" target="_blank">DIYgod</a>. Made with <i class="icon-heart throb" style="color: #d43f57;"></i> by {{profile.nickName}}. 最后更新于2016年5月30日</p>
 </footer>

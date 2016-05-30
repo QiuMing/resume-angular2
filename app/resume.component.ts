@@ -16,7 +16,7 @@ import {
 @Component({
     selector: 'my-app',
     templateUrl: 'app/resume.html',
-    styleUrls: ['app/style.min.css', 'app/fontello.min.css'] ,
+    styleUrls: ['app/style.css', 'app/fontello.css'] ,
     directives: [ROUTER_DIRECTIVES],
     providers: [
         ROUTER_PROVIDERS 

@@ -9,11 +9,11 @@ import {
 } from './resume';
 
 export var PROFILE: Profile = {
-    "name": "xqMing",
+    "name": "廖明",
     "email": "631663525@qq.com",
     "qq": "631663525",
     "weixin": "",
-    "phone": "156XXXXXX",
+    "phone": "15626130118",
     "nickName": "小丘明",
     "applyJob": "后台开发攻城师",
     "userBaseInfo": "1993年9月23日/男/处女座",
@@ -22,7 +22,9 @@ export var PROFILE: Profile = {
     "blogUrl": "",
     "levelOfEnglish": "CET-6",
     "selfIntroduction": "string",
-    "signature": "Write the Code. Change the World."
+    "signature": "Write the Code. Change the World.",
+    "pcResume":"",
+    "mobileResume":"",
 }
 
 export var SKILLS: Skill[] = [
@@ -131,7 +133,7 @@ export var COMPANYPROJECT: CompanyProject[] = [
             {
                 "name": "cooka商场系统",
                 "descriptions": [
-                    "一个B2B跨境电商项目，涵了pc端，移动web app ，微信商场。",
+                    "一个B2B跨境电商项目，涵盖了pc端，移动web app ，微信商场。",
                     "我全程参与负责了系统用户、购物车、风控、运费、权限、统计、安全中心几个模块的后台设计与开发。",
                     "主要用到spring boot、mybatis、shiro、velocity、fastdfs、solr、kafaka、reactjs等技术。"
                 ],
@@ -147,7 +149,7 @@ export var COMPANYPROJECT: CompanyProject[] = [
 ]
 
 export var MAINDES: string[] = [
-    "目前的我，有信心亦有能力，为企业完成一个中小型系统的架构与实现。"，
+    "有过一段不完整的创业经历，目前的我，有信心亦有能力，为企业完成一个中小型系统的架构与实现。"，
     "如果我是你正在要寻找的人，如果你希望与我共事，那就快把我找到碗里去吧^_^。"，
     "如果想和我有进一步沟通，那就动手描二维码加微信吧。"
 ]
@@ -162,17 +164,19 @@ export var OTHERDES: string[] = [
 export var ASIDE: Aside[] = [
 	{
 		"name": "源代码",
-		"url": "https://github.com/DIYgod/Resume"
+        "url": "https://github.com/QiuMing/resume-angular2"
 	}, {
-		"name": "PDF 下载",
-		"url": "[routerLink]="['Dashboard']
-	}, {
-		"name": "打印版预览",
-		"url": "string"
+        "name": "PDF 下载",
+		"url": "廖明-java后台开发工程师.pdf"
 	}, {
 		"name": "github",
 		"url": "https://github.com/QiuMing"
 	}
 ]
 
-
+/*
+{
+        "name": "打印版预览",
+        "url": "[routerLink]=['Dashboard']"
+ }
+*/

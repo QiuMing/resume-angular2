@@ -13,6 +13,8 @@ export class Profile {
     levelOfEnglish: string;
 	selfIntroduction: string;
 	signature: string;
+	pcResume: string;
+	mobileResume: string;
 }
 
 export class Skill {

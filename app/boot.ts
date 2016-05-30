@@ -9,7 +9,7 @@ import {provide} from '@angular/core';
 import {APP_BASE_HREF} from '@angular/common';
 enableProdMode();
 
-bootstrap(PrintComponent, [
+bootstrap(ResumeComponent, [
 	ROUTER_PROVIDERS,
 	provide(APP_BASE_HREF, { useValue: '/' })
 ]); 

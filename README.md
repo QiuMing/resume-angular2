@@ -9,9 +9,14 @@ npm start
 
 #### 截图效果
 ![](https://github.com/QiuMing/resume-angular2/blob/master/img/my.png)	
+
 #### 待解决问题
 	* css 引用问题
 	* angualr 路由跳转问题
+
+#### 带引进功能
+	* 背景音乐
+	* 打分项
  
 
 

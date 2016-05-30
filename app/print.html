@@ -35,6 +35,11 @@
                 <dd *ngIf="profile.blogUrl!=''"><span>Blog:</span> <a href="{{profile.blogUrl}}" target="_blank">{{profile.blogUrl}}</a></dd>
                 <dd *ngIf="profile.githubUrl!=''"><span>GitHub:</span> <a href="{{profile.githubUrl}}" target="_blank">{{profile.githubUrl}}</a></dd>
             </li>
+            <li *ngIf="profile.pcResume!=''" class="someRight">
+                <dt><i class="icon-bookmark"></i>Detail resume online. 简历在线</dt>
+                <dd *ngIf="profile.pcResume!=''"><span>pc 端:</span> {{profile.pcResume}}</dd>
+                <dd *ngIf="profile.mobileResume!=''"><span>手机端:</span> {{profile.mobileResume}}</dd>
+            </li>
         </ul>
         <div class="note">
             <p *ngFor = "let item of mainDes"> {{item}}</p>
