@@ -13,7 +13,7 @@ import {
 @Component({
     selector: 'my-app',
     templateUrl: 'app/print.html',
-    styleUrls: ['app/print.css', 'app/fontello.min.css']
+    styleUrls: ['app/print.css', 'app/fontello.css']
    
 })
 export class PrintComponent {

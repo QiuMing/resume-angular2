@@ -15,7 +15,7 @@ export var PROFILE: Profile = {
     "weixin": "",
     "phone": "15626130118",
     "nickName": "小丘明",
-    "applyJob": "后台开发攻城师",
+    "applyJob": "java后台开发攻城师",
     "userBaseInfo": "1993年9月23日/男/处女座",
     "educationInfo": "本科/广财大学信息学院/2016年应届生",
     "githubUrl": "https://github.com/QiuMing",
@@ -135,7 +135,7 @@ export var COMPANYPROJECT: CompanyProject[] = [
                 "descriptions": [
                     "一个B2B跨境电商项目，涵盖了pc端，移动web app ，微信商场。",
                     "我全程参与负责了系统用户、购物车、风控、运费、权限、统计、安全中心几个模块的后台设计与开发。",
-                    "主要用到spring boot、mybatis、shiro、velocity、fastdfs、solr、kafaka、reactjs等技术。"
+                    "主要用到技术：spring boot、mybatis、shiro、velocity、fastdfs、solr、kafaka、react。"
                 ],
                 "images": [
                     "img/cooka1.png",
