@@ -13,7 +13,7 @@ export var PROFILE: Profile = {
     "email": "631663525@qq.com",
     "qq": "631663525",
     "weixin": "",
-    "phone": "15626130118",
+    "phone": "15626139118",
     "nickName": "小丘明",
     "applyJob": "java后台开发攻城师",
     "userBaseInfo": "1993年9月23日/男/处女座",
