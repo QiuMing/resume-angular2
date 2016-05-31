@@ -23,7 +23,7 @@ export var PROFILE: Profile = {
     "levelOfEnglish": "CET-6",
     "selfIntroduction": "string",
     "signature": "Write the Code. Change the World.",
-    "pcResume":"",
+    "pcResume": "http://45.78.1.55:8080/",
     "mobileResume":"",
 }
 

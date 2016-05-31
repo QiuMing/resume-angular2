@@ -37,8 +37,8 @@
             </li>
             <li *ngIf="profile.pcResume!=''" class="someRight">
                 <dt><i class="icon-bookmark"></i>Detail resume online. 简历在线</dt>
-                <dd *ngIf="profile.pcResume!=''"><span>pc 端:</span> {{profile.pcResume}}</dd>
-                <dd *ngIf="profile.mobileResume!=''"><span>手机端:</span> {{profile.mobileResume}}</dd>
+                <dd *ngIf="profile.pcResume!=''"><span>pc 端:</span><a href="{{profile.pcResume}}" target="_blank">{{profile.pcResume}}</a></dd>
+                <dd *ngIf="profile.mobileResume!=''"><span>手机端:</span><a href="{{profile.mobileResume}}" target="_blank">{{profile.mobileResume}}</a> </dd>
             </li>
         </ul>
         <div class="note">
