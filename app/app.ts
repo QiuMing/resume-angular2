@@ -3,8 +3,8 @@ import {
     Routes,
     ROUTER_DIRECTIVES
 } from '@angular/router';
-import {PrintComponent} from './print';
-import {ResumeComponent} from './resume';
+import {PrintComponent} from './print.component';
+import {ResumeComponent} from './resume.component';
 @Component({
   selector: 'my-app',
   templateUrl: 'app/app.html',

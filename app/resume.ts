@@ -1,29 +1,69 @@
-import {Component} from '@angular/core';
-import {Routes, ROUTER_DIRECTIVES, ROUTER_PROVIDERS}  from '@angular/router';
-import { 
-    PROFILE,
-    SKILLS,
-    TECHS,
-    PERSONALPROJECTS,
-    COMPANYPROJECT,
-    MAINDES,
-    OTHERDES,
-    ASIDE  
-} from './resume-data';
-
-@Component({
-    selector: 'resume-app',
-    templateUrl: 'app/resume.html',
-    styleUrls: ['app/style.css', 'app/fontello.css'] ,
-})
-export class ResumeComponent  {
-    profile = PROFILE;
-    techs = TECHS;
-    otherDes = OTHERDES;
-    mainDes = MAINDES;
-    skills = SKILLS;
-    aside = ASIDE;
-    personalProjects = PERSONALPROJECTS;  
-    companyProjects = COMPANYPROJECT;
+export class Profile {
+    name: string;
+    nickName: string;
+    email: string;
+    qq: string;
+    weixin: string;
+    phone: string;
+    applyJob: string;
+    userBaseInfo: string;
+    educationInfo: string;
+    githubUrl: string;
+    blogUrl: string;
+    levelOfEnglish: string;
+    selfIntroduction: string;
+    signature: string;
+    pcResume: string;
+    mobileResume: string;
 }
 
+export class Skill {
+    type: string;
+    skillItems: SkillItem[];
+}
+
+export class SkillItem {
+    name: string;
+    descriptions: string[];
+}
+
+
+export class Tech {
+    name: string;
+    width: number;
+}
+
+
+export class PersonalProject {
+    name: string;
+    time: string;
+    descriptions: string[];
+    images: string[];
+    codeUrl: string;
+    demoUrl: string;
+}
+
+export class CompanyProject {
+    companyName: string;
+    time: string;
+    project: Project[];
+}
+
+export class Experience {
+    name: string;
+    time: string;
+    project: Project[];
+}
+
+export class Project {
+    name: string;
+    descriptions: string[];
+    images: string[];
+    codeUrl: string;
+    demoUrl: string;
+}
+
+export class Aside {
+    name: string;
+    url: string;
+}
