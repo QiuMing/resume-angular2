@@ -7,6 +7,10 @@ npm install
 npm start
 ```
 
+* 首页默认没有内容，访问
+	* A4版本 http://localhost:3000/print
+	* 详情版本 http://localhost:3000/resume
+
 #### 截图效果
 ![](https://github.com/QiuMing/resume-angular2/blob/master/img/my.png)	
 
@@ -15,8 +19,7 @@ npm start
 	* angualr 路由跳转问题
 
 #### 带引进功能
-	* 背景音乐
-	* 打分项
+ 	* 打分项
  
 
 
