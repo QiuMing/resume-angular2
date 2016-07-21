@@ -93,7 +93,7 @@ export var PERSONALPROJECTS: PersonalProject[] = [
 		"codeUrl": "https://github.com/QiuMing/zhihuWebSpider",
 		"demoUrl": ""
 	}, {
-		"name": "晨曦androi app 应用",
+		"name": "晨曦android app 应用",
 		"time": "",
 		"descriptions": [
 			"一款以关注私人健康为目标的app，一个学校团队的合作项目，涵盖登陆注册、带三方登陆、新闻资讯、计步器等功能模块，使用jwt进行身份认证与数据传输。"
