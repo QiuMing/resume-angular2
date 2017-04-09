@@ -35,8 +35,17 @@ export var SKILLS: Skill[] = [
                 "name": "语言",
                 "descriptions": [
                     "熟悉Java流行技术栈：spring-boot、mybatis、shiro、spring data jpa。",
-                    "使用过dubbo、active mq、zookeeper 中间件。"                ]
+                    "熟悉 阿里云 MQ消息，RMI 远程调用。",
+                    "了解并使用过dubbo、zookeeper，关注并在学习 Spring  Cloud 系列新技术。"  
+                              ]
             }, {
+                "name": "系统工具",
+                "descriptions": [
+                    "熟悉 Linux 操作，日常 Linux 办公半年，使用过腾讯|阿里云。",
+                    "熟悉 eclipse、idea 、Navicat Premium、git 、sublime 等工具。",
+                    "熟悉 mysql 、redis、mongodb。"
+                ]
+            },{
                 "name": "系统工具",
                 "descriptions": [
                     "熟悉 Linux 操作，日常 Linux 办公半年，使用过腾讯|阿里云。",
@@ -167,9 +176,9 @@ export var COMPANYPROJECT: CompanyProject[] = [
 ]
 
 export var MAINDES: string[] = [
-    "有过一段不完整的创业经历，目前的我，有信心亦有能力，为企业完成一个中小型系统的架构与实现。"，
-    "如果我是你正在要寻找的人，如果你希望与我共事，那就快把我找到碗里去吧^_^。"，
-    "如果想和我有进一步沟通，那就动手描二维码加微信吧。"
+    "90 后程序员，专注于服务端开发，Linux 粉，热爱开源。",
+    "2 年多创业团队工作经验，现在能够独立完成一个中小型到系统开发。",
+    "未来想成为一个架构师，目前在努力加深拓宽自己的技术栈，渴望结识更多志同道合到人。",
 ]
 
 export var OTHERDES: string[] = [
