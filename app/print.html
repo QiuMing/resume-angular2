@@ -7,6 +7,16 @@
         </div>
         <ul class="side-info">
             <li class="someRight">
+                <dt><i class="icon-bookmark"></i>Basic info. 基本信息</dt>
+                <dd><span>个人信息:</span> {{profile.userBaseInfo}}</dd>
+                <dd><span>教育经历:</span> {{profile.educationInfo}}</dd>
+                <dd><span>英语水平:</span> {{profile.levelOfEnglish}}</dd>
+                <!--<dd *ngIf="profile.nickName!=''"><span>常用ID:</span> {{profile.nickName}}</dd>-->
+                <dd *ngIf="profile.blogUrl!=''"><span>Blog:</span> <a href="{{profile.blogUrl}}" target="_blank">{{profile.blogUrl}}</a></dd>
+                <dd *ngIf="profile.githubUrl!=''"><span>GitHub:</span> <a href="{{profile.githubUrl}}" target="_blank">{{profile.githubUrl}}</a></dd>
+            </li>
+
+            <li class="someRight">
                 <dt><i class="icon-bookmark"></i>Contact. 联系方式</dt>
                 <dd *ngIf="profile.email!=''"><i class="icon-mail-alt"></i>邮箱: <a href="mailto:i@html.love" target="_blank">{{profile.email}}</a></dd>
                 <dd *ngIf="profile.weixin!=''"><i class="icon-wechat"></i>微信: {{profile.weixin}}</dd>
@@ -26,18 +36,10 @@
                     </div>
                 </dd>
             </li> -->
-            <li class="someRight">
-                <dt><i class="icon-bookmark"></i>Basic info. 基本信息</dt>
-                <dd><span>个人信息:</span> {{profile.userBaseInfo}}</dd>
-                <dd><span>教育经历:</span> {{profile.educationInfo}}</dd>
-                <dd><span>英语水平:</span> {{profile.levelOfEnglish}}</dd>
-                <dd *ngIf="profile.nickName!=''"><span>常用ID:</span> {{profile.nickName}}</dd>
-                <dd *ngIf="profile.blogUrl!=''"><span>Blog:</span> <a href="{{profile.blogUrl}}" target="_blank">{{profile.blogUrl}}</a></dd>
-                <dd *ngIf="profile.githubUrl!=''"><span>GitHub:</span> <a href="{{profile.githubUrl}}" target="_blank">{{profile.githubUrl}}</a></dd>
-            </li>
+            
             <li *ngIf="profile.pcResume!=''" class="someRight">
                 <dt><i class="icon-bookmark"></i>Detail resume online. 简历在线</dt>
-                <dd *ngIf="profile.pcResume!=''"><span>pc 端:</span><a href="{{profile.pcResume}}" target="_blank">{{profile.pcResume}}</a></dd>
+                <dd *ngIf="profile.pcResume!=''"><span></span><a href="{{profile.pcResume}}" target="_blank">{{profile.pcResume}}</a></dd>
                 <dd *ngIf="profile.mobileResume!=''"><span>手机端:</span><a href="{{profile.mobileResume}}" target="_blank">{{profile.mobileResume}}</a> </dd>
             </li>
         </ul>
@@ -47,7 +49,7 @@
          <div class="qr">
             <div class="qr-in">
                 <img src="img/psb.jpg">
-                <p>扫描加微信(^_^)</p>
+                <p>微信二维码</p>
             </div>
         </div> 
     </div>
@@ -79,7 +81,7 @@
                         </li>
                     </ul>
                 </div>  
-                <h3>个人项目</h3>
+                <h3>开源项目</h3>
                 <ul class="exp">
                     <li *ngFor="let pro of personalProjects"> 
                         <div class="circle"></div>
@@ -107,15 +109,15 @@
                 </div>
                 
             </li>
-           <li>
+           <!--<li>
                 <dt><i class="icon-bookmark"></i>Introduce. 简单介绍</dt>
-                <!-- <h3>其他</h3> -->
+                  <h3>其他</h3>  
                 <ul class="exp">
                     <li>
                         <p *ngFor = "let item of otherDes"> {{item}}</p>
                     </li>
                 </ul>
-            </li> 
+            </li> -->
         </ul>
     </div>
 </div>
