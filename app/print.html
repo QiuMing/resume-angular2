@@ -1,7 +1,9 @@
  <div class="container">
     <div class="sidebar">
         <div class="title">
-            <img style="width:150px; height:150px; border-radius:50%; overflow:hidden;" src="https://avatars2.githubusercontent.com/u/11348698?v=3&s=460">
+            <!--<img style="width:150px; height:150px; border-radius:50%; overflow:hidden;" src="https://avatars2.githubusercontent.com/u/11348698?v=3&s=460">-->
+                        <img style="width:150px; height:150px; border-radius:50%; overflow:hidden;" src="https://www.lgstatic.com/i/image/M00/31/93/CgqKkVdLvxOAUdThAANNTqDG-ag427.png">
+
             <h1>{{profile.name}}的简历</h1>
             <h2>{{profile.signature}}</h2>
         </div>
@@ -37,11 +39,11 @@
                 </dd>
             </li> -->
             
-            <li *ngIf="profile.pcResume!=''" class="someRight">
+            <!--<li *ngIf="profile.pcResume!=''" class="someRight">
                 <dt><i class="icon-bookmark"></i>Detail resume online. 简历在线</dt>
                 <dd *ngIf="profile.pcResume!=''"><span></span><a href="{{profile.pcResume}}" target="_blank">{{profile.pcResume}}</a></dd>
                 <dd *ngIf="profile.mobileResume!=''"><span>手机端:</span><a href="{{profile.mobileResume}}" target="_blank">{{profile.mobileResume}}</a> </dd>
-            </li>
+            </li>-->
         </ul>
         <div class="note">
             <p *ngFor = "let item of mainDes"> {{item}}</p>

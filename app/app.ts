@@ -12,7 +12,6 @@ import {ResumeComponent} from './resume.component';
   directives: [ROUTER_DIRECTIVES]
 })
  @Routes([
-    { path: '/', component: PrintComponent } ,//  useAsDefault: true }, coming soon!
-  { path: '/resume', component: ResumeComponent }
+    { path: '/', component: PrintComponent } 
 ])
 export class AppComponent { }
