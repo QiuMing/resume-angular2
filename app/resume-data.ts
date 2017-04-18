@@ -34,9 +34,9 @@ export var SKILLS: Skill[] = [
             {
                 "name": "语言",
                 "descriptions": [
-                    "熟悉Java流行技术栈：spring-boot、mybatis、shiro、spring data jpa、elasticsearch",
+                    "熟悉Java流行技术栈：spring-boot、mybatis、shiro、spring data jpa、elasticsearch、jersey",
                     "熟悉 RocketMQ，熟悉 RPC 框架 thrift，熟悉java 爬虫框架 webmagic",
-                    "能够使用过dubbo、zookeeper 搭建 SOA 应用，使用Spring Cloud 构建微服务应用。",
+                    "能够使用过dubbo、zookeeper 搭建 SOA 应用，了解 Spring Cloud 微服务技术栈，了解 RxJava",
                     "善于使用模板代码，编写代码生成器"         ]
             }, {
                 "name": "系统工具",
@@ -172,7 +172,7 @@ export var COMPANYPROJECT: CompanyProject[] = [
 export var MAINDES: string[] = [
     "90 后程序员，专注于服务端开发，Linux 党，爱折腾，爱开源。",
     "2 年多创业团队工作经验，熟悉电商系统、app、微信后台开发。",
-    "能够独立完成中小型到系统应用架构，能够使用 dubbo 搭建 SOA 架构应用，使用Spring Cloud 构建微服务应用",
+    "能够独立完成中小型到系统应用架构，能够使用 dubbo 搭建 SOA 架构应用，了解 Spring Cloud 微服务技术栈",
     "未来想成为一个架构师，目前在努力加深拓宽自己的技术栈，渴望结识更多志同道合到人。",
 ]
 
