@@ -34,9 +34,10 @@ export var SKILLS: Skill[] = [
             {
                 "name": "语言",
                 "descriptions": [
-                    "熟悉Java流行技术栈：spring-boot、mybatis、shiro、spring data jpa、elasticsearch、jersey",
+                    "熟悉Java流行技术栈：spring-boot、mybatis、shiro、spring data jpa、elasticsearch",
                     "熟悉 RocketMQ，熟悉 RPC 框架 thrift，熟悉java 爬虫框架 webmagic",
-                    "能够使用过dubbo、zookeeper 搭建 SOA 应用，了解 Spring Cloud 微服务技术栈，了解 RxJava",
+                    "能够使用过dubbo、zookeeper 搭建 SOA 应用",
+                    "了解 Spring Cloud 微服务技术栈，了解 RxJava，jersey",
                     "善于使用模板代码，编写代码生成器"         ]
             }, {
                 "name": "系统工具",
