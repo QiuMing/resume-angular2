@@ -16,6 +16,8 @@
                 <!--<dd *ngIf="profile.nickName!=''"><span>常用ID:</span> {{profile.nickName}}</dd>-->
                 <dd *ngIf="profile.blogUrl!=''"><span>Blog:</span> <a href="{{profile.blogUrl}}" target="_blank">{{profile.blogUrl}}</a></dd>
                 <dd *ngIf="profile.githubUrl!=''"><span>GitHub:</span> <a href="{{profile.githubUrl}}" target="_blank">{{profile.githubUrl}}</a></dd>
+                <!--<dd *ngIf="profile.githubUrl!=''"><span>Online Resume:</span> <a href="{{profile.githubUrl}}" target="_blank">{{profile.pcResume}}</a></dd>-->
+
             </li>
 
             <li class="someRight">
@@ -75,8 +77,8 @@
                             <div class="circle"></div>
                             <h5>
                                 {{pro.name}}
-                                 <a  *ngIf="pro.codeUrl!=''" href="{{pro.codeUrl}}" target="_blank"><i class="icon-link"></i>源代码</a>
-                                <a *ngIf="pro.demoUrl!=''"  href="{{pro.demoUrl}}" target="_blank"><i class="icon-link"></i>Demo</a>
+                                 <!--<a  *ngIf="pro.codeUrl!=''" href="{{pro.codeUrl}}" target="_blank"><i class="icon-link"></i>源代码</a>
+                                <a *ngIf="pro.demoUrl!=''"  href="{{pro.demoUrl}}" target="_blank"><i class="icon-link"></i>Demo</a>-->
                             </h5>
                             <p *ngFor="let item of pro.descriptions">   {{item}}  </p>
                             <!-- <img  *ngFor="let img of pro.images" src="{{img}}"> -->
